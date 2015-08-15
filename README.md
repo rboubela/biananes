@@ -23,7 +23,7 @@ Note: libsparkniftireader depends on libnifti-dev
         
 C) After building the biananes.jar with
 
-      | mvn package
+        $ mvn package
       
 Usage
 -----
