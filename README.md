@@ -3,7 +3,7 @@ biananes
 
 Scalable fMRI Data Analysis
 
-biananes is a library for fMRI data analysis on large datasets running on the [Apache Spark] framework. 
+biananes is a library for fMRI data analysis on large datasets running on the Apache Spark framework. 
 
 Installation
 ------------
