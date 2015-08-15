@@ -1,0 +1,2 @@
+PKG_LIBS=-Wl,-Bsymbolic-functions -Wl,-z,relro -L/usr/local/lib/gpucon/lib -lgpucon
+PKG_CPPFLAGS=-I/usr/local/lib/gpucon/include

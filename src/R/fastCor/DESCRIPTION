@@ -1,0 +1,11 @@
+Package: fastCor
+Type: Package
+Title: fastCor: Pearson Correlation on GPU
+Version: 1.1
+Date: 2015-08-14
+Author: Roland Boubela
+Maintainer: <roland.boubela@meduniwien.ac.at>
+Description: Provides an R interface to a fast and efficient implementation of the Pearson correlation
+License: GPL v2.0
+Imports: Rcpp (>= 0.11.1)
+LinkingTo: Rcpp

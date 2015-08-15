@@ -1,0 +1,3 @@
+useDynLib(fastCor)
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
