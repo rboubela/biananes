@@ -8,11 +8,11 @@ biananes is a library for fMRI data analysis on large datasets running on the [A
 Installation
 ------------
 
-A) Apache Spark: For the installation and setup of a Spark environment see the [Apache Spark](https://spark.apache.org/docs/latest/) documentation.
+A) Apache Spark: For the installation and setup of a Spark environment see the [Apache Spark](https://spark.apache.org//) [documentation](http://spark.apache.org/docs/latest/).
 
 B) Spark NiftiReader C library
 
-On all nodes running Spark workers need to have the libsparkniftireader installed
+All nodes running Spark workers need to have the libsparkniftireader installed
 
         # dpkg -i libsparkniftireader-0.0.2.deb
         
