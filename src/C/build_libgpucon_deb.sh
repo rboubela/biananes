@@ -2,7 +2,7 @@
 # Script that packages libgpucon as a deb.
 #
 # Author: Roland Boubela <roland.boubela@meduniwien.ac.at>
-# License: MIT
+# License: GPL
 
 if [ ! $(id -u) ]; then echo "no." && exit; fi
 if [ ! $(command -v fpm ) ]; then echo "fpm is missing (try 'gem install fpm')" && exit; fi
@@ -20,7 +20,7 @@ mv $TMPDIR/include $TMPDIR/usr/local/lib/gpucon
 cd ..
 
 sudo fpm -s dir -t deb -n gpucon -v $VERSION -C $TMPDIR \
-  -p gpucon-$VERSION.deb -d "cuda-6-0" \
+  -p ../../deb/gpucon-$VERSION.deb -d "cuda-6-0" \
   --maintainer "Roland Boubela <roland.boubela@meduniwien.ac.at>" \
   usr/local/lib/gpucon/lib usr/local/lib/gpucon/include 
 

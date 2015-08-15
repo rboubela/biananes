@@ -2,7 +2,7 @@
 # Script that packages libsparkniftilib as a deb.
 #
 # Author: Roland Boubela <roland.boubela@meduniwien.ac.at>
-# License: MIT
+# License: GPL
 
 if [ ! $(id -u) ]; then echo "no." && exit; fi
 if [ ! $(command -v fpm ) ]; then echo "fpm is missing (try 'gem install fpm')" && exit; fi
@@ -19,7 +19,7 @@ mv $TMPDIR/lib $TMPDIR/usr/local/lib/sparkniftireader
 cd ..
 
 sudo fpm -s dir -t deb -n sparkniftireader -v $VERSION -C $TMPDIR \
-  -p sparkniftireader-$VERSION.deb -d "libnifti-dev" \
+  -p ../../deb/sparkniftireader-$VERSION.deb -d "libnifti-dev" \
   --maintainer "Roland Boubela <roland.boubela@meduniwien.ac.at>" \
   usr/local/lib/sparkniftireader/lib
 
