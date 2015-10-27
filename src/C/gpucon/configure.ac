@@ -21,8 +21,8 @@ AC_SUBST(DESTDIR)
 # CUDA setup
 CUDA_HOME=/usr/local/cuda
 CUDA_CFLAGS="-Xcompiler -fpic -gencode arch=compute_35,code=sm_35 -gencode arch=compute_30,code=sm_30 -gencode arch=compute_20,code=sm_20"
-CUDA_CFLAGS="${CUDA_CFLAGS} -I{$CUDA_HOME}/include"
-CUDA_LDFLAGS="-shared -L${CUDA_HOME}\lib64"
+CUDA_CFLAGS="${CUDA_CFLAGS} -I${CUDA_HOME}/include"
+CUDA_LDFLAGS="-shared -L${CUDA_HOME}/lib64"
 CUDA_LIBS="-lcuda -lcublas"
 
 NVCC="nvcc"

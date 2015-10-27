@@ -20,7 +20,7 @@ mv $TMPDIR/include $TMPDIR/usr/local/lib/gpucon
 cd ..
 
 sudo fpm -s dir -t deb -n gpucon -v $VERSION -C $TMPDIR \
-  -p ../../deb/gpucon-$VERSION.deb -d "cuda-6-0" \
+  -p ../../deb/gpucon-$VERSION.deb -d "cuda-7-5" \
   --maintainer "Roland Boubela <roland.boubela@meduniwien.ac.at>" \
   usr/local/lib/gpucon/lib usr/local/lib/gpucon/include 
 
