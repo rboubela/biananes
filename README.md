@@ -34,7 +34,7 @@ One could add the JAR to a [spark-shell](https://spark.apache.org/docs/latest/)
 
 and start using it:
 
-        scala> import org.binanes.io.NiftiTools.NiftiImageReadMasked
+        scala> import org.biananes.io.NiftiTools.NiftiImageReadMasked
         scala> val hcp_root = sys.env("HCP_ROOT")
         scala> val img_file = hcp_root + "167743" + "/MNINonLinear/Results/rfMRI_REST1_RL/rfMRI_REST1_RL.nii.gz"
         scala> val mask_file = hcp_root + "167743" + "/MNINonLinear/Results/rfMRI_REST1_RL/brainmask_fs.2.nii.gz"
